@@ -26,9 +26,7 @@ if KeyboardInterrupt:
 train_data = np.array(train_img[10000::])
 print(np.shape(train_data))
 
-train_img = train_img[::-1]
-
-validation_data = np.array(train_img[10000::])
+validation_data = np.array(train_img[::-1][10000::])
 print(np.shape(validation_data))
 
 '''
